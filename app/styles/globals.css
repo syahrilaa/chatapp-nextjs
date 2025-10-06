@@ -3,19 +3,25 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --surface: oklch(0.99 0 0);
-  --surface-high: oklch(0.97 0 286);
+  --surface: oklch(0.92 0.00 286);
+  --surface-high: oklch(0.99 0.00 0);
   --on-surface-high: oklch(0.21 0.01 286);
+  --surface-highest: oklch(0.97 0.00 286);
+
+
 }
 
 .dark {
   --surface: oklch(0.14 0 286);
   --surface-high: oklch(0.21 0.01 286);
   --on-surface-high: oklch(0.97 0 286);
+  --surface-highest: oklch(0.27 0.01 286);
+
 }
 
 @theme inline {
   --color-surface: var(--surface);
   --color-surface-high: var(--surface-high);
   --color-on-surface-high: var(--on-surface-high);
+  --color-surface-highest: var(--surface-highest);
 }

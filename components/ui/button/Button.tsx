@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={cn([
-        "inline-flex w-auto cursor-pointer items-center justify-center rounded-full bg-zinc-200 duration-200 ease-in-out",
+        "bg-surface-highest inline-flex w-auto cursor-pointer items-center justify-center rounded-full duration-200 ease-in-out",
         {
           "h-9 px-4 text-sm [:has(>img:only-child),:has(>svg:only-child)]:gap-1.5 [:has(>img:only-child),:has(>svg:only-child)]:px-1.5":
             size === "sm",
